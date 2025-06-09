@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Muhammad Setiawan Wibisono</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #0a192f;
+            color: #fff;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #64ffda;
+        }
+
+        section {
+            padding: 100px 50px;
+            min-height: 100vh;
+        }
+        .hero {
+    padding: 0; /* hilangkan padding agar full height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero-left {
+    flex: 1;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-left h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-left .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #64ffda;
+    margin-bottom: 1rem;
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.hero-right {
+    flex: 1;
+    background: url('rektorat.jpg') center center/cover no-repeat;
+}
+
+        .hero {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #64ffda;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-top: 1rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #0a192f;
+            margin-bottom: 1rem;
+            border-left: 5px solid #64ffda;
+            padding-left: 15px;
+        }
+
+        .content {
+            background: #f4f4f4;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .task-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-card h3 {
+            margin-bottom: 0.5rem;
+            color: #0a192f;
+        }
+
+        .task-card iframe {
+            width: 100%;
+            height: 600px; /* dari 300 jadi 600 */
+            margin-top: 1rem;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .pdf-viewer {
+            width: 100%;
+            height: 600px; /* dari 500 jadi 600 */
+            margin-top: 1rem;
+            border: none;
+            border-radius: 10px;
+        }
+
+
+        footer {
+            background: #0a192f;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        .hero-left h4 {
+    font-size: 1.8rem;  /* dari 2.5rem menjadi 1.8rem */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+
+.hero-left p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #cbd5e1; /* warna abu-abu terang supaya tidak terlalu kontras */
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <h4 style="display: flex; align-items: center; gap: 8px;">
+            <img src="unila.png" alt="Logo Unila" style="width: 30px; height: 30px;">
+            Grafika Komputer
+        </h4>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tugas">Tugas</a></li>
+        </ul>
+    </nav>
+</header>
+<br>
+    <section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-left">
+            <h4>Muhammad Setiawan Wibisono</h4>
+            <br>
+            <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+            <p style="margin-top: 20px;">2217051099 (CD)</p>
+            <p>S1 Ilmu Komputer</p>
+        </div>
+        <div class="hero-right"></div>
+    </div>
+</section>
+
+
+    <section id="tugas">
+        <h2 class="section-title">Tugas & Kuis</h2>
+        <div class="content">
+        
+            <div class="task-card">
+                <h3>Tugas 1</h3>
+                <p>Tokoh Perintis Grafika Komputer</p>
+                <iframe src="https://www.youtube.com/embed/XbfFFI-qt9s?si=OmLLh7NRSn_UbgzU" allowfullscreen></iframe>
+                <iframe class="pdf-viewer" src="tugas1.pdf"></iframe>
+                <iframe class="pdf-viewer" src="tugas1_ppt.pdf"></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="task-card">
+                <h3>Tugas 2</h3>
+                <p>Algoritma Pembentukan Garis</p>
+                <iframe class="pdf-viewer" src="tugas2.pdf"></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="task-card">
+                <h3>Tugas 3</h3>
+                <p>Algortima Pembentukan Lingkaran</p>
+                <iframe class="pdf-viewer" src="tugas3.pdf"></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="task-card">
+                <h3>Tugas 4</h3>
+                <p>Algoritma Pembentukan Kurva</p>
+                <iframe class="pdf-viewer" src="tugas4.pdf"></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="task-card">
+                <h3>Kuis 1</h3>
+                <p>Persamaan Misteri</p>
+                <iframe src="https://www.youtube.com/embed/qemsqrdk2GY?si=JQg0jiqQmgVCeVnY" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="task-card">
+                <h3>Kuis 2</h3>
+                <p>Transformasi 2D & 3D</p>
+                <iframe src="https://www.youtube.com/embed/zZPlxugAMYM?si=SDOXSfDR9BGFYJsr" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="task-card">
+                <h3>Kuis 3</h3>
+                <p>Clipping Algortihm</p>
+                <iframe src="https://www.youtube.com/embed/LhKOHdHyNRY?si=K2IyK0aJFanIGm58" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div class="task-card">
+                <h3>Kuis 4</h3>
+                <p>Polygon Clipping</p>
+                <iframe src="https://www.youtube.com/embed/yjDSBvczLFI?si=3Y5a0qLCpBoOBs5a" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Muhammad Setiawan Wibisono. Universitas Lampung.</p>
+    </footer>
+</body>
+
+</html>
